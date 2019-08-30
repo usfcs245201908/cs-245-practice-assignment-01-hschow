@@ -5,10 +5,10 @@ public class Practice01MathRecursive implements Practice01Math{
         }
         else{
             if (n<0){
-                return 0;
+                throw new IllegalArgumentException();
             }
             else {
-                return n * fact(n - 1); //n is negative goes forever
+                return n * fact(n - 1);
             }
         }
     }
@@ -19,7 +19,7 @@ public class Practice01MathRecursive implements Practice01Math{
         }
         else{
             if (n<0){
-                return 0;
+                throw new IllegalArgumentException();
             }
             else {
                 return fib(n - 1) + fib(n - 2);
